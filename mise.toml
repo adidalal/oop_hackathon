@@ -1,0 +1,6 @@
+[tools]
+uv = "latest"
+
+[tasks.dev]
+description = "ruun the app in debug mode"
+run = "flask --app main run --debug"
