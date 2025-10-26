@@ -36,3 +36,8 @@
 choice X selected
 
 if #4 then -> send message, call vapi
+
+
+## Whatsapp
+
+https://developers.facebook.com/docs/whatsapp/business-management-api/get-started#system-user-access-tokens
