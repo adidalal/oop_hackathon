@@ -1,5 +1,6 @@
 import os
 from flask import Flask, jsonify, request, send_from_directory
+from message_handlers import handle_whatsapp_message, send_start_message_to_number
 
 app = Flask(__name__, static_folder="deck", static_url_path="")
 
@@ -70,6 +71,47 @@ def verify(request):
 @app.route("/", methods=["GET"])
 def home():
     return send_from_directory("deck", "index.html")
+
+
+# Serves the patient selector page
+@app.route("/patient-selector", methods=["GET"])
+def patient_selector():
+    return send_from_directory(".", "patient_selector.html")
+
+
+# Handles sending start message to selected patient
+@app.route("/send-start-message", methods=["POST"])
+def send_start_message():
+    try:
+        data = request.get_json()
+        patient_number = data.get("patientNumber")
+
+        if not patient_number:
+            return jsonify(
+                {"status": "error", "message": "Patient number is required"}
+            ), 400
+
+        # Send the start message directly to the patient number
+        send_start_message_to_number(patient_number)
+
+        return jsonify(
+            {"status": "success", "message": f"Start message sent to {patient_number}"}
+        ), 200
+
+    except Exception as e:
+        print(f"Error sending start message: {e}")
+        return jsonify(
+            {"status": "error", "message": f"Failed to send message: {str(e)}"}
+        ), 500
+
+
+# Serves images from the images folder
+@app.route("/images/<filename>", methods=["GET"])
+def serve_image(filename):
+    try:
+        return send_from_directory("images", filename)
+    except FileNotFoundError:
+        return jsonify({"status": "error", "message": "Image not found"}), 404
 
 
 @app.route("/ping", methods=["GET"])

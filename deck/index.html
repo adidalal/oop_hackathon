@@ -1,58 +1,106 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/moon.css">
+	<title>babycomeback</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Baby Come Back</section>
-				<section>Slide 2</section>
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.container {
+			display: flex;
+		}
+
+		.col {
+			flex: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>baby come back</section>
+			<section>
+				<div class="container">
+					<div class="col" class="r-fit-text">
+						<h2>You are losing your patients and you have no idea why ;(</h2>
+					</div>
+					<div class="col">
+						<img src="./images/deadpt.png" alt="RIP">
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="col">
+						<img src="./images/ytho.png" alt="pls">
+					</div>
+					<div class="col" class="r-fit-text">
+						<h2>WHY DO WE CARE?</h2>
+						<ul>
+							<li>Acquiring a new patient costs 5–10x more than keeping an existing one</li>
+							<li>Even a 5% increase in retention can raise profits 25–95%</li>
+							<li>Independent practices lose $150k/yr on missed appointments</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Dashboard time</h2>
+			</section>
+			<section>
+				<section data-background-iframe="https://obgyn-flow-natalie53.replit.app/" data-background-interactive>
+					  <p></p>
 				</section>
 				<section>
-					<h2>Fun quote</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+					<h2>Demo time</h2>
 				</section>
 				<section>
-					<h2>Dashboard</h2>
-					<iframe class="r-stretch" src="/ping"></iframe>
-					<p>Optional explainer text</p>
+					<iframe class="r-stretch" src="/patient-selector"></iframe>
 				</section>
-			</div>
+
+				<section>
+					<h2>Tech stuff</h2>
+					<ul>
+						<li>WhatsApp Business (RIP twilio)</li>
+						<li>vapi, a lil' bit of cursed Python code, Stedi (mocked)</li>
+					</ul>
+
+					<p>btw, this is real, go to <a href="http://oop.dalal.dev">oop.dalal.dev</a> to check it out</p>
+				</section>
+
+				<section>
+					<h1>Thank You!</h1>
+					<h3>Aditya, Natalie, Taylor, Sabeeh</h3>
+				</section>
+				<section>
+					<img src="./images/workflow.png">
+				</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealHighlight ]
-			});
-		</script>
-	</body>
+	<script src=" dist/reveal.js">
+	</script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealHighlight]
+		});
+	</script>
+</body>
+
 </html>

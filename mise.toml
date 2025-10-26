@@ -9,6 +9,7 @@ VERIFY_TOKEN = { required = true }
 VAPI_TOKEN = { required = true }
 CUSTOMER_NUMBER = { required = true }
 STEDI_API_KEY = { required = true }
+BASE_URL = { required = true }
 
 [tasks.dev]
 description = "run the app in debug mode"

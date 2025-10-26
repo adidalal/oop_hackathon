@@ -1,0 +1,543 @@
+{
+  "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "11112222333344445555666677",
+    "outboundTraceId": "01K8GGEYQ39S2W3NEFXZWYT1S7"
+  },
+  "controlNumber": "112233445",
+  "reassociationKey": "112233445",
+  "tradingPartnerServiceId": "60054",
+  "provider": {
+    "providerName": "MEDICAL PROVIDER",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "memberId": "AETNA12345",
+    "firstName": "JANE",
+    "lastName": "DOE",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "20040404",
+    "groupNumber": "111222333444555",
+    "planNumber": "1122334",
+    "address": {
+      "address1": "101 MAIN ST",
+      "city": "TRENTON",
+      "state": "NJ",
+      "postalCode": "08601"
+    }
+  },
+  "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "AETNA INC",
+    "payorIdentification": "953402799"
+  },
+  "planInformation": {
+    "planNumber": "1122334",
+    "groupNumber": "111222333444555",
+    "groupDescription": "New Jersey Plan"
+  },
+  "planDateInformation": {
+    "planBegin": "20240401",
+    "service": "20240917"
+  },
+  "planStatus": [
+    {
+      "statusCode": "1",
+      "status": "Active Coverage",
+      "planDetails": "Gold Plan",
+      "serviceTypeCodes": [
+        "30"
+      ]
+    },
+    {
+      "statusCode": "1",
+      "status": "Active Coverage",
+      "serviceTypeCodes": [
+        "1",
+        "33",
+        "47",
+        "48",
+        "50",
+        "86",
+        "98",
+        "UC",
+        "MH",
+        "AL"
+      ]
+    }
+  ],
+  "benefitsInformation": [
+    {
+      "code": "W",
+      "name": "Other Source of Data",
+      "inPlanNetworkIndicatorCode": "W",
+      "inPlanNetworkIndicator": "Not Applicable",
+      "benefitsRelatedEntity": {
+        "entityIdentifier": "Payer",
+        "entityType": "Non-Person Entity",
+        "entityName": "Aetna",
+        "address": {
+          "address1": "202 Main St",
+          "city": "El Paso",
+          "state": "TX",
+          "postalCode": "79998"
+        }
+      },
+      "benefitsRelatedEntities": [
+        {
+          "entityIdentifier": "Payer",
+          "entityType": "Non-Person Entity",
+          "entityName": "Aetna",
+          "address": {
+            "address1": "202 Main St",
+            "city": "El Paso",
+            "state": "TX",
+            "postalCode": "79998"
+          }
+        }
+      ]
+    },
+    {
+      "code": "1",
+      "name": "Active Coverage",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "insuranceTypeCode": "PR",
+      "insuranceType": "Preferred Provider Organization (PPO)",
+      "planCoverage": "Gold Plan",
+      "inPlanNetworkIndicatorCode": "W",
+      "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+      "code": "C",
+      "name": "Deductible",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "25",
+      "timeQualifier": "Contract",
+      "benefitAmount": "500",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "benefitsDateInformation": {
+        "planBegin": "20240401"
+      }
+    },
+    {
+      "code": "C",
+      "name": "Deductible",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "29",
+      "timeQualifier": "Remaining",
+      "benefitAmount": "500",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes"
+    },
+    {
+      "code": "G",
+      "name": "Out of Pocket (Stop Loss)",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "25",
+      "timeQualifier": "Contract",
+      "benefitAmount": "7000",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes"
+    },
+    {
+      "code": "G",
+      "name": "Out of Pocket (Stop Loss)",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "29",
+      "timeQualifier": "Remaining",
+      "benefitAmount": "7000",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes"
+    },
+    {
+      "code": "C",
+      "name": "Deductible",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "25",
+      "timeQualifier": "Contract",
+      "benefitAmount": "1000",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No",
+      "benefitsDateInformation": {
+        "planBegin": "20240401"
+      }
+    },
+    {
+      "code": "C",
+      "name": "Deductible",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "29",
+      "timeQualifier": "Remaining",
+      "benefitAmount": "1000",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No"
+    },
+    {
+      "code": "G",
+      "name": "Out of Pocket (Stop Loss)",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "25",
+      "timeQualifier": "Contract",
+      "benefitAmount": "14000",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No"
+    },
+    {
+      "code": "G",
+      "name": "Out of Pocket (Stop Loss)",
+      "coverageLevelCode": "IND",
+      "coverageLevel": "Individual",
+      "serviceTypeCodes": [
+        "30"
+      ],
+      "serviceTypes": [
+        "Health Benefit Plan Coverage"
+      ],
+      "timeQualifierCode": "29",
+      "timeQualifier": "Remaining",
+      "benefitAmount": "14000",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No"
+    },
+    {
+      "code": "1",
+      "name": "Active Coverage",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "1",
+        "33",
+        "47",
+        "48",
+        "50",
+        "86",
+        "98",
+        "UC",
+        "MH",
+        "AL"
+      ],
+      "serviceTypes": [
+        "Medical Care",
+        "Chiropractic",
+        "Hospital",
+        "Hospital - Inpatient",
+        "Hospital - Outpatient",
+        "Emergency Services",
+        "Professional (Physician) Visit - Office",
+        "Urgent Care",
+        "Mental Health",
+        "Vision (Optometry)"
+      ],
+      "inPlanNetworkIndicatorCode": "W",
+      "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+      "code": "A",
+      "name": "Co-Insurance",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "33",
+        "86",
+        "98",
+        "MH",
+        "UC"
+      ],
+      "serviceTypes": [
+        "Chiropractic",
+        "Emergency Services",
+        "Professional (Physician) Visit - Office",
+        "Mental Health",
+        "Urgent Care"
+      ],
+      "benefitPercent": "0",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "Chiropractic"
+        },
+        {
+          "description": "Office Visits"
+        },
+        {
+          "description": "Urgent Care"
+        },
+        {
+          "description": "Walk in Clinic"
+        },
+        {
+          "description": "Mental Health (outpatient)"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "name": "Co-Insurance",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "86"
+      ],
+      "serviceTypes": [
+        "Emergency Services"
+      ],
+      "benefitPercent": "0.2",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "Emergency Room"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "name": "Co-Insurance",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "48",
+        "50",
+        "MH"
+      ],
+      "serviceTypes": [
+        "Hospital - Inpatient",
+        "Hospital - Outpatient",
+        "Mental Health"
+      ],
+      "benefitPercent": "0.2",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "IP Hospital Room and Board"
+        },
+        {
+          "description": "IP Hospital Miscellaneous"
+        },
+        {
+          "description": "OP Hospital Miscellaneous"
+        },
+        {
+          "description": "Mental Health (inpatient)"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Co-Payment",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "33"
+      ],
+      "serviceTypes": [
+        "Chiropractic"
+      ],
+      "benefitAmount": "25",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "Chiropractic"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Co-Payment",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "98",
+        "MH",
+        "UC"
+      ],
+      "serviceTypes": [
+        "Professional (Physician) Visit - Office",
+        "Mental Health",
+        "Urgent Care"
+      ],
+      "benefitAmount": "30",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "Office Visits"
+        },
+        {
+          "description": "Walk in Clinic"
+        },
+        {
+          "description": "Mental Health (outpatient)"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Co-Payment",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "86",
+        "UC"
+      ],
+      "serviceTypes": [
+        "Emergency Services",
+        "Urgent Care"
+      ],
+      "benefitAmount": "40",
+      "inPlanNetworkIndicatorCode": "Y",
+      "inPlanNetworkIndicator": "Yes",
+      "additionalInformation": [
+        {
+          "description": "Urgent Care"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "name": "Co-Insurance",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "33",
+        "48",
+        "50",
+        "86",
+        "98",
+        "MH",
+        "UC"
+      ],
+      "serviceTypes": [
+        "Chiropractic",
+        "Hospital - Inpatient",
+        "Hospital - Outpatient",
+        "Emergency Services",
+        "Professional (Physician) Visit - Office",
+        "Mental Health",
+        "Urgent Care"
+      ],
+      "benefitPercent": "0.5",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No",
+      "additionalInformation": [
+        {
+          "description": "Chiropractic"
+        },
+        {
+          "description": "IP Hospital Room and Board"
+        },
+        {
+          "description": "IP Hospital Miscellaneous"
+        },
+        {
+          "description": "Office Visits"
+        },
+        {
+          "description": "Urgent Care"
+        },
+        {
+          "description": "Walk in Clinic"
+        },
+        {
+          "description": "OP Hospital Miscellaneous"
+        },
+        {
+          "description": "Mental Health (inpatient)"
+        },
+        {
+          "description": "Mental Health (outpatient)"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "name": "Co-Insurance",
+      "coverageLevelCode": "EMP",
+      "coverageLevel": "Employee Only",
+      "serviceTypeCodes": [
+        "86"
+      ],
+      "serviceTypes": [
+        "Emergency Services"
+      ],
+      "benefitPercent": "0.2",
+      "inPlanNetworkIndicatorCode": "N",
+      "inPlanNetworkIndicator": "No",
+      "additionalInformation": [
+        {
+          "description": "Emergency Room"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "x12": "",
+  "eligibilitySearchId": "019a2107-7ae3-7460-a249-2caecf1ad33e"
+}
