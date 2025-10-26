@@ -89,7 +89,7 @@ def handle_whatsapp_message(body):
     message = body["entry"][0]["changes"][0]["value"]["messages"][0]
     if message["type"] == "text":
         message_body = message["text"]["body"].upper()
-    if not message_body:
+    if not message_body:  # pyright: ignore[reportPossiblyUnboundVariable]
         return
 
     if message_body == "START":

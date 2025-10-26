@@ -76,7 +76,7 @@ def home():
 
 
 # Accepts POST and GET requests at /webhook endpoint
-@app.route("/webhook", methods=["POST", "GET"])
+@app.route("/webhook", methods=["POST", "GET"])  # pyright: ignore[reportArgumentType]
 def webhook():
     if request.method == "GET":
         return verify(request)
