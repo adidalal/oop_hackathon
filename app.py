@@ -1,11 +1,8 @@
-import io
 import os
-from time import sleep
-import requests
-from flask import Flask, jsonify, request
-from message_handlers import handle_whatsapp_message
+from flask import Flask, jsonify, request, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="deck", static_url_path="")
+
 
 whatsapp_token = os.environ.get("WHATSAPP_TOKEN")
 verify_token = os.environ.get("VERIFY_TOKEN")
@@ -69,10 +66,15 @@ def verify(request):
     return jsonify({"status": "error", "message": "Verification failed"}), 403
 
 
-# Sets homepage endpoint and welcome message
+# Sets homepage endpoint to serve index.html from deck directory
 @app.route("/", methods=["GET"])
 def home():
-    return "Welcome to babycomeback"
+    return send_from_directory("deck", "index.html")
+
+
+@app.route("/ping", methods=["GET"])
+def ping():
+    return "babycomeback is up"
 
 
 # Accepts POST and GET requests at /webhook endpoint
