@@ -1,7 +1,5 @@
 # OOP Hackathon
 
-
-
 ## APIs & Tech usage
 
 
@@ -31,6 +29,10 @@
 
 
 
-
-
 ## 
+
+1-7 message when START recieved
+
+choice X selected
+
+if #4 then -> send message, call vapi

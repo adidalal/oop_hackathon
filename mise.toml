@@ -1,6 +1,18 @@
 [tools]
 uv = "latest"
 
+[env]
+FLASK_APP = "app.py"
+# API keys (must be set in environment or mise.local.toml)
+WHATSAPP_TOKEN = { required = true }
+VERIFY_TOKEN = { required = true }
+VAPI_TOKEN = { required = true }
+CUSTOMER_NUMBER = { required = true }
+
 [tasks.dev]
-description = "ruun the app in debug mode"
-run = "flask --app main run --debug"
+description = "run the app in debug mode"
+run = "flask run --debug"
+
+[tasks.prod]
+description = "run the app in prod mode"
+run = "flask run --host 0.0.0.0 --port 9000 --no-debugger --no-reload"
